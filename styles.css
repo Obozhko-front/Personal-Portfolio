@@ -1,10 +1,11 @@
 body{
-    padding-inline: 20%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-inline: 2rem;
 }
 
 header{
     border: solid;
-   
 }
 
 main{
@@ -14,11 +15,7 @@ main{
     grid-template-areas: 
     "artc-pro artc-exp artc-edu"
     "artc-pro artc-osw artc-edu";
-    grid-template-columns: 20% 40% 40%;
-}
-
-footer{
-    border: solid;
+    grid-template-columns: 1fr 2fr 2fr;
 }
 
 article{
@@ -36,7 +33,7 @@ article{
 .header-hero{
     display: flex;
     justify-content: center;
-    padding: 0 0 2em 0;
+    padding-bottom: 2em;
 }
 
 ul{
@@ -60,29 +57,19 @@ ul{
 
 .artc-pro{
     grid-area: artc-pro;
+    border-bottom: none;
+    border-inline: none;
 }
 
 .artc-pro > p:not(:last-child) {
     border-bottom: solid;
 }
 
-.artc-pro > * {
-    padding-inline: 2rem 0;
-    padding-bottom: 0.5rem;
-}
-
-.artc-edu > * {
-    padding-inline: 2rem 0;
-    padding-bottom: 0.5rem;
-}
-
-.artc-osw > * {
-    padding-inline: 2rem 0;
-    padding-bottom: 0.5rem;
-}
-
-.artc-exp > * {
-    padding-inline: 2rem 0;
+.artc-pro > *,
+.artc-edu > *,
+.artc-osw > *,
+.artc-exp > *{
+    padding-left: 2rem;
     padding-bottom: 0.5rem;
 }
 
@@ -92,6 +79,7 @@ ul{
     margin-inline: 1rem ;
 }
 footer{
+    border: solid;
     display: flex;
     flex-direction: column;
     padding-left: 3rem ;
